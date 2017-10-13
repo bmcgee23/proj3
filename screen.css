@@ -15,29 +15,140 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   3. basic element presenation
 */
 html {
-  font-size: 2.0em; /* */
-  line-height: 1.125em; /* */
   background-color: darkcyan;
+  font-size: 1.5; /*24 / 16 */
+  line-height: 1.25em; /*20 / 16 */
   font-family: "Courier New", Courier, monospace;
 }
 
 body {
-  background: darkgoldenrod;
-  padding-top: 2.444em; /* 44 / 18 = 3.667... */
-  padding-right: 1.222em; /* 22 / 18 = 1.2222222222 */
-  padding-left: 1.222em; /* 22 / 18 = 1.2222222222 */
+
+  padding-top: 2.67em; /* 44/18=3.667 */
+  padding-right: 1.222em; /* 22/18=1.222 */
+  padding-left: 1.222em; //* 22/18=1.222 */
 }
 
-footer {
-  color:
+nav {
+  background color:white;
+}
+
+nav a {
+  text-align:center;
+  color: darkcyan;
 }
 
 h1,
 h2,
 h3,
+h4,
 figure,
-nav {
-  font-family:
-  font-weight: bold;
+figcaption {
+padding-bottom: 1.222em; /* 22/18=1.222 */
+}
+
+
+h1 {
   text-align: center;
+  font-style: italic;
+  font-size: 2.5em;
+  line-height:2.0em;
+  padding-top: 1.222em;
+}
+
+h2 {
+  text-align: center;
+  font-size:1.5em;
+  line-height:1.125em;
+
+}
+
+h3 {
+  text-align: left;
+  font-style: bold;
+  font-weight:bold;
+  text-decoration: underline solid;
+  font-size: 1.25em;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 5em;
+}
+
+p {
+  text-indent: 25px;
+}
+
+
+li a {
+    display: grid;
+    color: #000;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #444;
+    color: darkgoldenrod;
+
+}
+
+/* Responsive Media */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Layout Styles */
+/*
+  Hint: these tend to be
+  1. IDs; but also classes, sometimes
+  2. concerned with layout and spatial
+     relationships
+*/
+
+#navigation {
+  position:absolute;
+  width: 100%;
+  top:0px;
+  left:0px;
+  background-color:darkgoldenrod;
+
+}
+
+#navigation li {
+  float:left;
+  width:auto;
+}
+
+#navigation a {
+  display:block;
+  width:100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+
+/* Modular Styles */
+/*
+  Repeating style patterns.
+  Hint: these tend to be:
+  1. classes and relationship selectors
+  2. concerned with adjustments to base styles,
+      spacing, color, etc. etc.
+*/
+
+
+
+}
+.figure {
+  float:right;
+  margin-bottom:1.0em;
+  margin left: 30em
 }
