@@ -168,7 +168,17 @@ audio {
 }
 
 /* State Styles */
+.js abbr {
+  cursor: pointer;
+}
+#slideshow {
+  margin: auto;
+  position: relative;
+}
 
+.slide {
+  position: absolute;
+}
 @@media screen and (min-width: 350px) {
   body {
     padding-right: 11.423%;
